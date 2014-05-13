@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:jaxb="http://java.sun.com/xml/ns/jaxb"
+           xmlns:xjc="http://java.sun.com/xml/ns/jaxb/xjc"
+           jaxb:extensionBindingPrefixes="xjc"
+           jaxb:version="2.0">
+    <xs:element name="serverVersion" type="serverVersion" />
+    <xs:complexType name="serverVersion">
+        <xs:all minOccurs="0">
+            <xs:element name="description" type="xs:string" />
+            <xs:element name="buildDate" type="xs:dateTime" />
+            <xs:element name="buildVersion" type="xs:string"/>
+            <xs:element name="builtBy" type="xs:string" />
+            <xs:element name="serverTime" type="xs:dateTime" />
+        </xs:all>
+        <xs:attribute name="location" type="xs:anyURI" use="optional" />
+        <xs:attribute name="single_mimetype" type="xs:string" fixed="application/xml" />
+    </xs:complexType>
+</xs:schema>
