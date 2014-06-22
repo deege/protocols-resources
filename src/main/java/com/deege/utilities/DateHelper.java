@@ -9,14 +9,12 @@ import javax.xml.datatype.DatatypeFactory;
 import javax.xml.datatype.XMLGregorianCalendar;
 
 /**
- * Helper class to convert date from Date to GregorianCalendar and vice versa.
+ * <p>Helper class to convert date from Date to GregorianCalendar and vice versa.</p>
  * 
  */
 public class DateHelper {
 	/**
-	 * <p>
-	 * Needed to create XMLGregorianCalendar instances
-	 * </p>
+	 * <p>Needed to create XMLGregorianCalendar instances</p>
 	 */
 	private static DatatypeFactory df = null;
 
@@ -31,12 +29,9 @@ public class DateHelper {
 	}
 
 	/**
-	 * <p>
-	 * Converts an XMLGregorianCalendar to an instance of java.util.Date
-	 * </p>
+	 * <p>Converts an XMLGregorianCalendar to an instance of {@link java.util.Date}</p>
 	 * 
-	 * @param xgc
-	 *            Instance of XMLGregorianCalendar or a null reference
+	 * @param xgc Instance of XMLGregorianCalendar or a null reference
 	 * @return java.util.Date instance whose value is based upon the value in
 	 *         the xgc parameter. If the xgc parameter is null then this method
 	 *         will simply return null.
@@ -50,12 +45,9 @@ public class DateHelper {
 	}
 
 	/**
-	 * <p>
-	 * Converts a java.util.Date into an instance of XMLGregorianCalendar
-	 * </p>
+	 * <p>Converts a java.util.Date into an instance of {@link XMLGregorianCalendar}</p>
 	 * 
-	 * @param date
-	 *            Instance of java.util.Date or a null reference
+	 * @param date Instance of java.util.Date or a null reference
 	 * @return XMLGregorianCalendar instance whose value is based upon the value
 	 *         in the date parameter. If the date parameter is null then this
 	 *         method will simply return null.
@@ -72,11 +64,9 @@ public class DateHelper {
 	}
 
 	/**
-	 * <p>
-	 * Returns a {@link java.util.Date} without the time.
-	 * </p>
+	 * <p>Returns a {@link java.util.Date} without the time.</p>
 	 * 
-	 * @param date
+	 * @param date to strip of time
 	 * @return date without time
 	 */
 	public static Date getDateWithoutTime(java.util.Date date) {
@@ -90,10 +80,8 @@ public class DateHelper {
 	}
 
 	/**
-	 * <p>
-	 * Returns a {@link java.util.Date} that represents the last millisecond of
-	 * a particular day. (end of day)
-	 * </p>
+	 * <p>Returns a {@link java.util.Date} that represents the last millisecond of
+	 * a particular day. (end of day)</p>
 	 * 
 	 * @param date
 	 * @return end of the day
